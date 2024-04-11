@@ -62,7 +62,7 @@ html, body {
     display: inline-flex;
     align-items: center;
     padding: .4rem;
-    background-color: #f0f0f0;
+    background-color: #FFF;
     border: none;
     border-radius: 50px; /* Makes the button pill-shaped */
     text-decoration: none; /* Removes default hyperlink styling */
@@ -82,3 +82,31 @@ html, body {
     font-size: 1.6rem;
     margin-right: 1rem; /* Text size */
 }
+
+
+.ivan-link {
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    padding: .2rem;
+    background-color: #FFF;
+    border: none;
+    border-radius: 50px; /* Makes the button pill-shaped */
+    text-decoration: none; /* Removes default hyperlink styling */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a slight shadow for depth */
+    margin-bottom: 1rem; /* Distance from the bottom of the screen */
+}
+
+.ivan-link img {
+    border-radius: 50%; /* Makes the image round */
+    margin-right: .5rem; /* Adds space between the image and the text */
+    width: 3rem; /* Image width */
+    height: 3rem; /* Image height */
+}
+
+.ivan-link span {
+    color: #333; /* Text color */
+    font-size: 1rem;
+    margin-right: .5rem; /* Text size */
+}
+

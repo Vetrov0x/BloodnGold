@@ -25,8 +25,9 @@
         src="https://res.cloudinary.com/gal-images/image/upload/c_crop,h_685,w_685,x_82,y_0/c_scale,dpr_3.0,h_118,r_max,w_118/v1708453370/profiles/artofjonatas%40gmail.com/profile-picture"
         alt="Profile Picture"
       />
-      <span>Art of Jônatas Chimen</span>
+      <span>JÔNATAS</span>
     </a>
+
 
     <a-scene
       mindar-image="imageTargetSrc: ./targets.mind; filterMinCF:.001; filterBeta: 0.001; "
@@ -117,6 +118,30 @@
           playsinline
           webkit-playsinline
         ></video>
+        <video
+        id="X"
+        src="video/X.webm"
+        loop="true"
+        muted
+        playsinline
+        webkit-playsinline
+      ></video>
+      <video
+      id="XI"
+      src="video/XI.webm"
+      loop="true"
+      muted
+      playsinline
+      webkit-playsinline
+    ></video>
+    <video
+    id="XII"
+    src="video/XII.webm"
+    loop="true"
+    muted
+    playsinline
+    webkit-playsinline
+  ></video>
       </a-assets>
       <a-camera
         position="0 0 0"
@@ -239,7 +264,56 @@
         >
         </a-entity>
       </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 8">
+        <a-video src="#X" height="1.2"></a-video>
+        <a-entity
+          clickable-redirect
+          data-url="https://www.gallerux.com/artworks/8c27f96b-7503-4423-9c3e-58d8f495fe21"
+          position=" 0 -.9 0"
+          pannel=" height:0.5;dynamicText: X
+      \n\n Ritual Bath
+      \n (Time-Based, The Augmented Series 1, 2024).
+      \n\n [CLICK TO COLLECT];"
+        >
+        </a-entity>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 9">
+        <a-video src="#XI" height="1.2"></a-video>
+        <a-entity
+          clickable-redirect
+          data-url="https://www.gallerux.com/artworks/8c27f96b-7503-4423-9c3e-58d8f495fe21"
+          position=" 0 -.9 0"
+          pannel=" height:0.5;dynamicText: XI
+      \n\n The Appearance of Yet Another Local Saint
+      \n (Time-Based, The Augmented Series 1, 2024).
+      \n\n [CLICK TO COLLECT];"
+        >
+        </a-entity>
+      </a-entity>
+
+      <a-entity mindar-image-target="targetIndex: 10">
+        <a-video src="#XII" height="1.2"></a-video>
+        <a-entity
+          clickable-redirect
+          data-url="https://www.gallerux.com/artworks/8c27f96b-7503-4423-9c3e-58d8f495fe21"
+          position=" 0 -.9 0"
+          pannel=" height:0.5;dynamicText: XII
+      \n\n Atonement
+      \n (Time-Based, The Augmented Series 1, 2024).
+      \n\n [CLICK TO COLLECT];"
+        >
+        </a-entity>
+      </a-entity>
     </a-scene>
+    <a href="https://link3.to/vetrov" target="_blank" class="ivan-link">
+      <img
+        src="https://ccgateway.infura-ipfs.io/ipfs/QmVwgBAgtWXesStRtE45UhiQ3SagBM5Wd8NpNdoRa6NjT8"
+        alt="Profile Picture"
+      />
+      <span>Scanner made by Vetrov.eth</span>
+    </a>
 
     <script src="loading.js"></script>
   </body>
