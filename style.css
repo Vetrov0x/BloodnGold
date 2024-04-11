@@ -1,0 +1,84 @@
+:root {
+    --plane-color: #FFFFFF; /* White color */
+    --text-color: #000000; /* Black color */
+    /* Example, though direct font URL application isn't typically done through CSS for A-Frame */
+
+  }
+  
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Hide the A-Frame VR button */
+.a-enter-vr, .a-orientation-modal { 
+    display: none !important; 
+}
+
+/* Custom Loading Screen Styles */
+.loading-screen {
+    position: fixed; /* Changed from relative to fixed to cover the entire viewport */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 2em;
+    transition: opacity 1s ease;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.loading-image {
+    max-width: 33vw; /* Adjust size as necessary */
+    max-height: auto;
+    margin-bottom: 3rem; /* Adds some space between the image and the text */
+}
+
+*{
+    font-family: 'EB Garamond', serif;
+    /* No need for position relative or z-index here as flexbox handles the layout */
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden; /* Ensures the element is not visible when faded out */
+    transition: visibility 0s 0.5s, opacity 0.5s ease;
+}
+
+.profile-link {
+    z-index: 10;
+    display: inline-flex;
+    align-items: center;
+    padding: .4rem;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50px; /* Makes the button pill-shaped */
+    text-decoration: none; /* Removes default hyperlink styling */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a slight shadow for depth */
+    margin-top: 1rem; /* Distance from the bottom of the screen */
+}
+
+.profile-link img {
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 1rem; /* Adds space between the image and the text */
+    width: 50px; /* Image width */
+    height: 50px; /* Image height */
+}
+
+.profile-link span {
+    color: #333; /* Text color */
+    font-size: 1.6rem;
+    margin-right: 1rem; /* Text size */
+}
