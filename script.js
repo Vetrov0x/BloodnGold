@@ -79,7 +79,7 @@ AFRAME.registerComponent('clickable-redirect', {
     const videoElements = document.querySelectorAll('.video-element');
   
     videoElements.forEach(video => {
-      const canAutoplay = video.canPlayType('video/webm; codecs="vp8, vorbis"') !== '';
+      const canAutoplay = video.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"') !== '';
   
       if (canAutoplay) {
         video.play().catch(error => console.error('Error attempting to play video:', error));
