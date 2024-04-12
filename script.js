@@ -74,3 +74,15 @@ AFRAME.registerComponent('clickable-redirect', {
   document.querySelectorAll('video').forEach(video => {
     observer.observe(video);
   });
+
+  window.onload = function() {
+    const videoElements = document.querySelectorAll('.video-element');
+  
+    videoElements.forEach(video => {
+      const canAutoplay = video.canPlayType('video/webm; codecs="vp8, vorbis"') !== '';
+  
+      if (canAutoplay) {
+        video.play().catch(error => console.error('Error attempting to play video:', error));
+      }
+    });
+  };
