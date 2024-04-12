@@ -71,18 +71,17 @@ AFRAME.registerComponent('clickable-redirect', {
     });
   }, { threshold: 0.5 });
 
-  document.querySelectorAll('video').forEach(video => {
-    observer.observe(video);
-  });
-
-  window.onload = function() {
-    const videoElements = document.querySelectorAll('.video-element');
+  // document.querySelectorAll('video').forEach(video => {
+  //   observer.observe(video);
+  // });
+  // window.onload = function() {
+  //   const videoElements = document.querySelectorAll('video');
   
-    videoElements.forEach(video => {
-      const canAutoplay = video.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"') !== '';
+  //   function playVideosWithUserInteraction() {
+  //     videoElements.forEach(video => {
+  //       video.play().catch(error => console.error('Error attempting to play video:', error));
+  //     });
+  //   }
   
-      if (canAutoplay) {
-        video.play().catch(error => console.error('Error attempting to play video:', error));
-      }
-    });
-  };
+  //   document.addEventListener('click', playVideosWithUserInteraction, { once: true });
+  // };
